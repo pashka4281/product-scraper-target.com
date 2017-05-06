@@ -2,7 +2,7 @@
 var execSync = require('child_process').execSync;
 var path = require('path');
 
-const regexp = /\/\/www.targetf.com\//;
+const regexp = /\/\/www.target.com\//;
 
 function parseTarget(url) {
   var parserScriptFile = path.join(__dirname, '/', 'parser.js');
