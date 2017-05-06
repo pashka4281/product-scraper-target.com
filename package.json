@@ -1,6 +1,6 @@
 {
   "name": "product-scraper-target.com",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Phantomjs - based parser for target.com product pages. Returns JSON with properties",
   "main": "index.js",
   "scripts": {

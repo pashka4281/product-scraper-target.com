@@ -20,8 +20,10 @@ page.open(address, function(status) {
       var details = $('#tab-content-details').html().trim();
       var images  = $('.js-showZoomImage img').map(function(i, img) { return $(img).prop('src') }).toArray();
       var price   = $('#stickySidebar .price .h-text-lowercase').text().trim();
+      var title   = $('.title-product').text().trim();
 
       var result = {
+        title   : title,
         details : details,
         price   : price,
         images  : images
