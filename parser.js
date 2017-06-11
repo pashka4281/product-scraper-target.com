@@ -11,6 +11,17 @@ if (system.args.length === 1) {
 }
 
 address = system.args[1];
+phantom.addCookie({
+  'name': 'bfx.currency',
+  'value': 'USD',
+  'domain': '.target.com'
+});
+
+phantom.addCookie({
+  'name': 'bfx.country',
+  'value': 'US',
+  'domain': '.target.com'
+});
 
 page.onLoadFinished = function(status) { };
 
